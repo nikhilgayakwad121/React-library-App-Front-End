@@ -7,6 +7,12 @@ Here is the Library Application Architecture
   <img src="https://github.com/nikhilgayakwad121/React-library-App/assets/118470700/7e6e845a-24cd-4d10-967d-fa4a2f938766" alt="App Arch.">
 </div>
 
+#  Okta Auth Security Flow
+
+Here is the Okta Auth Security
+![photo_2024-07-02_13-58-02](https://github.com/nikhilgayakwad121/React-library-App/assets/118470700/a4c1936b-ad25-419e-a727-9b58067cd8c9)
+
+
 
 
 # Stripe Payment Processing Flow
