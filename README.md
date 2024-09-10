@@ -1,4 +1,4 @@
-### To create a new Reat with typeScript enabled :
+### To create a new React with typeScript enabled :
 ```html
 npx create-react-app react -library --template typescript
 
