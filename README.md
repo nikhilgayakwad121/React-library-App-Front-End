@@ -6,6 +6,16 @@ npx create-react-app react -library --template typescript
 Remove files like : App.test.tsx, logo.svg, reportWebVitals.ts, setupTests.ts
 
 --------------------------------------------------------------------------------------------------------------------------------
+### If started out with React Application clone it :
+Then,
+
+```html
+npm install
+
+npm start
+
+```
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
