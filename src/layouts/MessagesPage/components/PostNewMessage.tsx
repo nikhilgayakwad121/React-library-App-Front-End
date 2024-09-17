@@ -11,7 +11,7 @@ export const PostNewMessage = () => {
     const [displaySuccess, setDisplaySuccess] = useState(false);
 
     async function submitNewQuestion() {
-        const url = `http://localhost:8080/api/messages/secure/add/message`;
+        const url = `${process.env.REACT_APP_API}/messages/secure/add/message`;
         if (authState?.isAuthenticated && title !== '' && question !== '') {
             const messageRequestModel: MessageModel = new MessageModel(title, question);
             const requestOptions = {
@@ -41,7 +41,7 @@ export const PostNewMessage = () => {
     return (
         <div className='card mt-3'>
             <div className='card-header'>
-                Ask question to Luv 2 Read Admin
+                Ask question to BookBuddy Library Admin
             </div>
             <div className='card-body'>
                 <form method='POST'>

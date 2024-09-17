@@ -12,12 +12,10 @@ export const Navbar = () => {
 
   const handleLogout = async () => oktaAuth.signOut();
 
-  console.log(authState);
-
   return (
     <nav className='navbar navbar-expand-lg navbar-dark main-color py-3'>
       <div className='container-fluid'>
-      <span className='navbar-brand'>📕 Book Buddy Library </span> 
+        <span className='navbar-brand'>🕮 BookBuddy Library</span>
         <button className='navbar-toggler' type='button'
           data-bs-toggle='collapse' data-bs-target='#navbarNavDropdown'
           aria-controls='navbarNavDropdown' aria-expanded='false'
@@ -36,6 +34,11 @@ export const Navbar = () => {
             {authState.isAuthenticated &&
               <li className='nav-item'>
                 <NavLink className='nav-link' to='/shelf'>Shelf</NavLink>
+              </li>
+            }
+            {authState.isAuthenticated &&
+              <li className='nav-item'>
+                <NavLink className='nav-link' to='/fees'>Pay fees</NavLink>
               </li>
             }
             {authState.isAuthenticated && authState.accessToken?.claims?.userType === 'admin' &&
